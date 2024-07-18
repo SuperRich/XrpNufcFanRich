@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Gumtree Products</title>
+    <title>My Gumroad Products</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,56 +11,76 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            width: 60%;
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2 {
+            margin: 0;
+            padding-bottom: 1rem;
         }
         .content {
-            padding: 2rem 0;
+            padding: 1rem 0;
+        }
+        .product-list {
+            list-style: none;
+            padding: 0;
+        }
+        .product-item {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-item a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .product-item a:hover {
+            text-decoration: underline;
+        }
+        .price {
+            color: #333;
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        a {
-            color: #333;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #007bff;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Products</h1>
-        </div>
-    </header>
     <div class="container">
+        <header>
+            <h1>Products</h1>
+        </header>
         <div class="content">
             <h2>My Gumroad Products</h2>
-            <ul>
-                <li><a href="https://rxrp.gumroad.com/l/muwwbb?_gl=1*1rlgerg*_ga*NDMyMjU1MDM5LjE3MjEzMzI2NzU.*_ga_6LJN6D94N6*MTcyMTMzMjY3NC4xLjEuMTcyMTMzMjczMy4wLjAuMA..">How to book cheap flights</a></li>
-                <li><a href="https://rxrp.gumroad.com/l/nvvsf?_gl=1*zt3rza*_ga*NDMyMjU1MDM5LjE3MjEzMzI2NzU.*_ga_6LJN6D94N6*MTcyMTMzMjY3NC4xLjEuMTcyMTMzMjczMy4wLjAuMA..">Welcome to the World of Cryptocurrencies</a></li>
+            <ul class="product-list">
+                <li class="product-item">
+                    <a href="https://rxrp.gumroad.com/l/muwwbb?_gl=1*1rlgerg*_ga*NDMyMjU1MDM5LjE3MjEzMzI2NzU.*_ga_6LJN6D94N6*MTcyMTMzMjY3NC4xLjEuMTcyMTMzMjczMy4wLjAuMA..">How to book cheap flights</a>
+                    <span class="price">£0.60p</span>
+                </li>
+                <li class="product-item">
+                    <a href="https://rxrp.gumroad.com/l/nvvsf?_gl=1*zt3rza*_ga*NDMyMjU1MDM5LjE3MjEzMzI2NzU.*_ga_6LJN6D94N6*MTcyMTMzMjY3NC4xLjEuMTcyMTMzMjczMy4wLjAuMA..">Welcome to the World of Cryptocurrencies</a>
+                    <span class="price">£1.00</span>
+                </li>
             </ul>
         </div>
+        <footer>
+            &copy; 2024
+        </footer>
     </div>
-    <footer>
-        
-    </footer>
 </body>
 </html>
